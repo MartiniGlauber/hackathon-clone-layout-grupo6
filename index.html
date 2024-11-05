@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Plataforma de compra"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/css/styles.css">
+</head>
+<body>
+   
+    <div class="container">
+        <div id="successBalloon" class="dialog-balloon success">
+            Sucesso!
+        </div>
+        <div id="redirectBalloon" class="dialog-balloon redirect">
+            Você está sendo redirecionado...
+        </div>
+        <div class="logo">
+            <img src="public/images/logo_maxi_doctor.png" alt="Logo da Empresa">
+        </div>
+
+        <h4>A PLATAFORMA COMPRA DIRETA DO SEU ANESTÉSICO TÓPICO</h4>
+        <div class="error-message" id="error-message"></div> 
+
+        <form id="myForm">
+
+            <label for="crm">CRM:</label>
+            <input type="text" id="crm" name="crm" oninput="mascaraNoCampo(this)" maxlength="7" >
+            
+            <label for="uf">UF:</label>
+            <select name="regioes" id="regioes" >
+                <option value="">Selecione um estado</option>
+                <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+                <option value="Rio de Janeiro">Rio de Janeiro</option>
+                <option value="São Paulo">São Paulo</option>
+            </select>
+
+            <button type="submit">CONTINUAR</button>
+        </form>
+
+        <h4>CANAL DE COMPRA PARA A CLASSE MÉDICA</h4>
+
+        <div class="icons-de-baixo">
+            <img class="Icone-Aglidade" src="public/images/Icone_Agili.png" alt="Icone Agilidade">
+            <img class="Icone-Comodi" src="public/images/Icone_Comodi.png" alt="Icone Comodi">
+        <div class="icons-de-cima">
+            <img class="Icone-Facilit" src="public/images/Icone_Facilit.png" alt="Icone Facilit">
+            <img class="Icone-Frete" src="public/images/Icone_Frete.png" alt="Icone Frete">
+            <img class="Icone-Quantidade" src="public/images/Icone_Quanti.png" alt="Icone Quantidade">
+        </div>
+        </div>
+    </div>
+
+   
+
+  
+    
+    <script src="src/js/script.js"></script>
+</body>
+</html>

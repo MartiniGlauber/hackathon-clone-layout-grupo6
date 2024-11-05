@@ -1,0 +1,108 @@
+@import url(variables.css);
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color-three);
+    display: flex;
+    justify-content: center; /* Centraliza os elementos na horizontal */
+    align-items: center; /* Centraliza os elementos na vertical */
+    height: 100vh; /* Faz a tela ocupar 100% da altura */
+    margin: 0;
+}
+
+.container {
+    text-align: center; /* Centraliza o texto dentro do container */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px; /* Limita a largura do formulário */
+}
+
+/* Logo */
+.logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+/* Formulário */
+label {
+    margin-top: 10px;
+    display: block;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Mensagem de erro */
+.error-message {
+    display: none;
+    background-color: #ffdddd;
+    color: #d8000c;
+    border: 1px solid #d8000c;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+/* Estilo do título */
+h4 {
+    margin-top: 10px;
+    color: var(--text-color-one);
+}
+
+    
+    .dialog-container {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px; 
+        z-index: 1000;
+    }
+
+    
+    .dialog-balloon {
+        padding: 10px 20px;
+        border-radius: 20px;
+        color: white;
+        font-size: 14px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    
+    .success {
+        background-color: #4CAF50;
+    }
+
+   
+    .redirect {
+        background-color: #2196F3;
+    }
+
+
+
